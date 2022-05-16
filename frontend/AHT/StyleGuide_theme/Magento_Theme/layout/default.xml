@@ -33,16 +33,6 @@
 
         </referenceContainer> -->
 
-        <!-- menu -->
-        <!-- <referenceContainer name="page.top">
-            <referenceBlock name="navigation.sections">
-                <referenceBlock name="store.settings" remove="true">
-
-                </referenceBlock>
-            </referenceBlock>
-        </referenceContainer> -->
-
-
         <!-- remove and move -->
         <move element="form.subscribe" destination="footer.links.end" before="footer.icon.links" />
         <move element="copyright" destination="footer" after="-"/>
