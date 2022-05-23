@@ -7,19 +7,18 @@
         $(document).on('click', '.add-qty-button', function() {
             let abc = $(this).closest('.number-input-form-qty').find('input');
             abc.val(parseInt(abc.val()) + 1);
-            if(abc.val()>100){
+            if (abc.val() > 100) {
                 abc.val(100);
             }
         });
         $(document).on('click', '.minus-qty-button', function() {
             let abc = $(this).closest('.number-input-form-qty').find('input');
             abc.val(parseInt(abc.val()) - 1);
-            if(abc.val()<1){
+            if (abc.val() < 1) {
                 abc.val(1);
             }
         });
     });
-    
 </script>
 
 <!--**************** slick******************* -->
@@ -30,7 +29,7 @@
         'jquery',
         'slick',
         'domReady!'
-    ], function ($) {
+    ], function($) {
         $(".homepage-slider").slick({
             dots: false,
             infinite: true,
@@ -51,23 +50,21 @@
             arrows: false,
             autoplay: true,
             autoplaySpeed: 5000,
-            
+
             mobileFirst: true,
-            responsive: [
-                {
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                        dots: false,
-                        infinite: false,
-                        speed: 300,
-                        arrows: false,
-                        autoplay: false,
-                        autoplaySpeed: 5000,
-                    }
+            responsive: [{
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    arrows: false,
+                    autoplay: false,
+                    autoplaySpeed: 5000,
                 }
-            ]
+            }]
         });
         $('.video-block-slider').slick({
             slidesToShow: 1,
@@ -80,30 +77,28 @@
             autoplaySpeed: 5000,
             centerPadding: '20px',
             mobileFirst: true,
-            responsive: [
-                {
-                    breakpoint: 1280,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        dots: false,
-                        infinite: false,
-                        speed: 300,
-                        arrows: false,
-                        autoplay: false,
-                        autoplaySpeed: 5000,
-                        centerPadding: '20px',
-                        
-                    }
+            responsive: [{
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    arrows: false,
+                    autoplay: false,
+                    autoplaySpeed: 5000,
+                    centerPadding: '20px',
+
                 }
-            ]
+            }]
         });
 
 
 
 
         var viewportWidth = $(window).width();
-        if( viewportWidth >= 1280 ){
+        if (viewportWidth >= 1280) {
             var product_Rows = 1;
             var product_Slides = 4;
             var product_Arrows = true;
@@ -111,7 +106,7 @@
             var insta_Slides = 5;
             var insta_Arrows = true;
             var insta_Dots = false;
-        } else{
+        } else {
             var product_Rows = 2;
             var product_Slides = 2;
             var product_Arrows = false;
@@ -144,10 +139,10 @@
 
 
         //responsive
-        $(document).ready(function(){
-            $(window).resize(function(){
+        $(document).ready(function() {
+            $(window).resize(function() {
                 var viewportWidth = $(window).width();
-                if( viewportWidth >= 1280 ){
+                if (viewportWidth >= 1280) {
                     var product_Rows = 1;
                     var product_Slides = 4;
                     var product_Arrows = true;
@@ -155,7 +150,7 @@
                     var insta_Slides = 5;
                     var insta_Arrows = true;
                     var insta_Dots = false;
-                } else{
+                } else {
                     var product_Rows = 2;
                     var product_Slides = 2;
                     var product_Arrows = false;
@@ -188,21 +183,21 @@
                 });
             });
         });
-        
-        
+
+
     });
 </script>
 
 
 <script type="text/javascript">
-require(['jquery',
-    'mage/accordion'
-], function($) {
-    $("#accordion").accordion({
-        active: "0",
-        collapsible: true,
-        openedState: "active",
-        multipleCollapsible: true
+    require(['jquery',
+        'mage/accordion'
+    ], function($) {
+        $("#accordion").accordion({
+            active: "0",
+            collapsible: true,
+            openedState: "active",
+            multipleCollapsible: true
+        });
     });
-});
 </script>
