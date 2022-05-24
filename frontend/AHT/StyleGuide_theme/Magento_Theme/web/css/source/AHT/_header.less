@@ -61,7 +61,78 @@
             //minicart-wrapper
             .minicart-wrapper {
                 //icon cart and quantity number
-                margin: 5px 0 0 0;
+                margin: 15px 0 0 0;
+                right: 5px;
+                .block-minicart {
+                    width: 360px;
+                    padding: 20px;
+                    top: 110%;
+
+                    .items-total,
+                    .subtotal {
+                        .count {
+                            font-weight: 400;
+                        }
+
+                        margin: 0;
+
+                        .label {
+                            .span:after {
+                                content: "123";
+                            }
+                        }
+                    }
+
+                    .block-content {
+                        .subtotal .label {
+                            &::after {
+                                content: none;
+                            }
+                        }
+                        .actions {
+                            margin-top: 20px;
+
+                            .primary {
+                                margin: 0;
+
+                                .action.primary {
+                                    padding: 7.5px;
+                                }
+                            }
+
+                            .secondary {
+                                .action.delete {
+                                    margin-left: 15px;
+                                }
+
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+
+                    //button edit delete
+                    .product.actions {
+                        margin: -30px 0 0 140px;
+
+                        .secondary {
+                            .action.deleted {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+
+                    .minicart-items-wrapper {
+                        overflow: unset;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    .minicart-items {
+                        .product-item {
+                            padding: 20px 0;
+                        }
+                    }
+                }
                 .action.showcart {
                     .counter.qty {
                         background-color: transparent;
